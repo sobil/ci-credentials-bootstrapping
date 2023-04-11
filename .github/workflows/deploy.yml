@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      BUCKET_NAME: "mywebsitebucket-infrademo-${{github.run_number}}"
+      BUCKET_NAME: "mywebsitebuckets-infrademo-${{github.run_number}}"
     permissions:
       packages: write
       contents: read
