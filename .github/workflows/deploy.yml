@@ -27,7 +27,7 @@ jobs:
     #     ./scripts/rotate-aws-credentials.sh
     - name: Create S3 Bucket
       run: |
-        aws s3api create-bucket --bucket $BUCKET_NAME
+        aws s3 create-bucket --bucket $BUCKET_NAME
     - name: Upload Website Files to S3 Bucket
       run: |
         aws s3 sync . s3://$BUCKET_NAME
